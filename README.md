@@ -3,6 +3,10 @@ Data Studio for LeRobot Datasets
 
 Private Beta - expect bugs!
 
+Known issues:
+1. Not optimised for first render - if it needs to download datasets locally (datasets stored in default LeRobot directory, `~/.cache/huggingface/lerobot` on Linux the app looks like it has frozen even though it is waiting for data to load. I recommend downloading the datasets you use to the cache first, or using very fast internet.
+2. Sometimes the web server ends in zombie state, you can kill it manually on port 8000
+
 ## Installation
 
 ### Linux
