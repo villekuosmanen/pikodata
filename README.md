@@ -54,4 +54,4 @@ macOS
 
 - Open System Preferences → Security & Privacy
 - Click the "Open Anyway" button that appears
-- If the button doesn't appear, try running: `xattr -cr /Applications/Pikodata.app` in Terminal
+- If the button doesn't appear, try running: `xattr -d com.apple.quarantine "/Applications/Pikodata Studio.app/"` in Terminal
