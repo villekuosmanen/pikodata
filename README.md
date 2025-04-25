@@ -11,7 +11,7 @@ Known issues:
 
 ### Linux
 
-**AppImage**
+**AppImage** (currently not available as the file is too large to upload on github)
 - Download the latest `Pikodata-x.x.x.AppImage` file from the releases page
 - Make it executable: `chmod +x Pikodata-x.x.x.AppImage`
 - Run it directly: `./Pikodata-x.x.x.AppImage`
