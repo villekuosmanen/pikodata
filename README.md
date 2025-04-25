@@ -39,20 +39,19 @@ or
 
 Launch from your applications menu or run pikodata in terminal
 
-
-
 macOS
 
-Download the latest `Pikodata-x.x.x.dmg` file from the releases page
-Open the DMG file
-Drag the Pikodata icon to the Applications folder
-Close the DMG window
-Open Pikodata from your Applications folder
-On first launch, you may need to right-click the app and select "Open" to bypass macOS security warnings
+- Download the latest `Pikodata-x.x.x.dmg` file from the releases page.
+  - For Apple Silicon (M1 processor and above) download the `arm64.dmg` version. 
+- Open the DMG file
+- Drag the Pikodata icon to the Applications folder
+- Close the DMG window
+- Open Pikodata from your Applications folder
+- On first launch, you may need to right-click the app and select "Open" to bypass macOS security warnings
 
-Troubleshooting on macOS
-If you see "App is damaged and can't be opened" message:
+- Troubleshooting on macOS
+- If you see "App is damaged and can't be opened" message:
 
-Open System Preferences → Security & Privacy
-Click the "Open Anyway" button that appears
-If the button doesn't appear, try running: `xattr -cr /Applications/Pikodata.app` in Terminal
+- Open System Preferences → Security & Privacy
+- Click the "Open Anyway" button that appears
+- If the button doesn't appear, try running: `xattr -cr /Applications/Pikodata.app` in Terminal
