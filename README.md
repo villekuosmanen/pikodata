@@ -1,7 +1,7 @@
 # Pikodata
 Data Studio for LeRobot Datasets
 
-[Join the Discord!](https://discord.gg/VDqCJhZb)
+[Join the Discord!](https://discord.gg/8QvvCpQtJq)
 
 Private Beta - expect bugs!
 
