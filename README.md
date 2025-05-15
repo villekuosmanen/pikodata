@@ -7,12 +7,27 @@ Private Beta - expect bugs!
 
 Known issues:
 1. Not optimised for first render - if it needs to download datasets locally (datasets stored in default LeRobot directory, `~/.cache/huggingface/lerobot` on Linux the app looks like it has frozen even though it is waiting for data to load. I recommend downloading the datasets you use to the cache first, or using very fast internet.
-2. Sometimes the web server ends in zombie state, you can kill it manually on port 8000
-3. Doesn't run on MacBook Air for some reason.
+2. Deleting frames takes a long time - be patient while it loads!
+2. Deleting frames won't work without an `ffmpeg` installation.
 
 ## Installation
 
+You will need to have `ffmpeg` and the `libsvtav1` encoder available.
+
 ### Linux
+
+You will need to start Pikodata from the command line with a compatible `ffmpeg` installation. I suggest using an existing LeRobot conda environment.
+```
+conda activate lerobot
+pikodata
+```
+or
+```
+conda create -n pikodata python=3.10
+conda activate pikodata
+conda install ffmpeg -c conda-forge
+pikodata
+```
 
 **AppImage** (currently not available as the file is too large to upload on github)
 - Download the latest `Pikodata-x.x.x.AppImage` file from the releases page
@@ -32,7 +47,7 @@ or `dpkg`
 Launch from your applications menu or run pikodata in terminal
 
 
-RPM package (For Fedora/RHEL-based distributions):
+**RPM package** (For Fedora/RHEL-based distributions):
 
 Download the latest `pikodata-x.x.x.x86_64.rpm` file
 Install using `dnf` or `yum`:
@@ -42,7 +57,12 @@ or
 
 Launch from your applications menu or run pikodata in terminal
 
-macOS
+### MacOS
+
+First install `ffmpeg`:
+```
+brew install ffmpeg 
+```
 
 - Download the latest `Pikodata-x.x.x.dmg` file from the releases page.
   - For Apple Silicon (M1 processor and above) download the `arm64.dmg` version. 
@@ -50,11 +70,3 @@ macOS
 - Drag the Pikodata icon to the Applications folder
 - Close the DMG window
 - Open Pikodata from your Applications folder
-- On first launch, you may need to right-click the app and select "Open" to bypass macOS security warnings
-
-- Troubleshooting on macOS
-- If you see "App is damaged and can't be opened" message:
-
-- Open System Preferences → Security & Privacy
-- Click the "Open Anyway" button that appears
-- If the button doesn't appear, try running: `xattr -d com.apple.quarantine "/Applications/Pikodata Studio.app/"` in Terminal
